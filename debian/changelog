@@ -1,3 +1,23 @@
+libtasn1-3 (2.10-1ubuntu1.2pexip1) pexip; urgency=low
+
+  * New upstream release
+
+ -- John-Mark Bell <jmb@pexip.com>  Mon, 28 Jul 2014 15:32:12 +0100
+
+libtasn1-3 (2.10-1ubuntu1.2) precise-security; urgency=medium
+
+  * SECURITY UPDATE: denial of service and possible code execution via
+    invalid ASN.1 data
+    - debian/patches/CVE-2014-3467-3468.patch: properly calculate lengths
+      in lib/decoding.c.
+    - CVE-2014-3467
+    - CVE-2014-3468
+  * SECURITY UPDATE: denial of service via NULL value
+    - debian/patches/CVE-2014-3469.patch: check for NULLs in lib/element.c.
+    - CVE-2014-3469
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 18 Jul 2014 13:36:06 -0400
+
 libtasn1-3 (2.10-1ubuntu1.1pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging
